@@ -12,9 +12,8 @@ def banner():
     
 def main():
     banner()
-    filename = input("Enter file name : ")
     count2capture = int(input("Enter number of packets to capture : "))
-    sniffer(filename, count2capture)
+    sniffer(count2capture)
 
 if __name__ == "__main__":
     main()
