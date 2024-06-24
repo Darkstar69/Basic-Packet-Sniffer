@@ -5,10 +5,8 @@ from modules import *
 from colorama import Fore, Style
 from art import *
 
-banner_text = "Sniffy"
-
 def banner():
-    tprint(banner_text, font="random")
+    tprint("snifPy", font="random")
     
 def main():
     banner()
@@ -16,4 +14,7 @@ def main():
     sniffer(count2capture)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except:
+        print("\nSome Error Occured\nBye!!")

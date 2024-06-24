@@ -2,7 +2,6 @@ from scapy.all import sniff, IP, UDP, TCP
 from scapy.all import *
 from scapy.layers import *
 import logging
-import binascii
 
 def packet_sniffer(packet):
     if IP in packet:
